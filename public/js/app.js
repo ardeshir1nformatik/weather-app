@@ -1,4 +1,3 @@
-console.log('file loaded...')
 
 // fetch('http://localhost:3000/weather?address=kelsterbach').then((response) => {
 //     response.json().then((data) => {

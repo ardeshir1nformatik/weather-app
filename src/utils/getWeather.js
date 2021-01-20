@@ -10,7 +10,7 @@ const getWeather = (lat, lon, callback) => {
         } else if (response.body.error) {
             return callback('Location not found!')
         } else {
-            callback(undefined, `The current tempetature is: ${response.body.current.temperature}. Current Forecast: ${response.body.current.weather_descriptions[0]}`)
+            callback(undefined, `Current tempetature: ${response.body.current.temperature}. It feels like: ${response.body.current.feelslike}. Current Forecast: ${response.body.current.weather_descriptions[0]}`)
         }
     })
 
